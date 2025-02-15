@@ -1,0 +1,8 @@
+# Carpeta de dependencias
+node_modules/
+
+# Carpeta de compilación
+dist/
+
+# Archivos de configuración de entorno
+.env
