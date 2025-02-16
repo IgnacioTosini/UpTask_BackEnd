@@ -39,7 +39,7 @@ export class ProjectController {
                 return
             }
 
-            if (project.manager?.toString() !== req.user?.id.toString() && !project.team.includes(req.user.id)) {
+            if (project.manager.toString() !== req.user.id.toString() && !project.team.includes(req.user.id)) {
                 const error = new Error('Acción no valida')
                 res.status(404).json({ error: error.message })
                 return
